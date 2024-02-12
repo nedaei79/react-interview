@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# مصاحبه فنی نیروی فرانت - دانیو
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+سطح: مبتدی
 
-## Available Scripts
+زمان پیشنهادی: بین نیم تا یک ساعت
 
-In the project directory, you can run:
+## بخش اول: سوالات تئوری
 
-### `npm start`
+1. مزیت ReactJS نسبت به استفاده از HTML و CSS به همراه JavaScript ساده (Vanilla JavaScript) چه بود که همه به استفاده از ReactJS رو آوردند؟
+2. مفهوم کلی Virtual DOM را توضیح دهید.
+3. JSX چیست؟
+4. در سالیان اخیر به جای Class-Based Component از Functional Component استفاده می‌شود. همانطور که میدانید تحت شرایطی ممکن است کد مربوط به یک Functional Component از بالا تا پایین یک بار دیگر اجرا شود و تغییرات Virtual DOM روی DOM واقعی آورده شود که به آن Rerender می‌گویند. تحت چه شرایطی این اتفاق می‌افتد؟
+5. دو تا از معروف‌ترین Hook هایی که در ReactJS کاربرد دارند، useCallback و useMemo هستند. از این دو هوک برای حل چه مشکلی استفاده می‌شود؟ تفاوت این دو با یکدیگر چیست؟
+6. فرض کنید پردازش یک کامپوننت طول می‌کشد. چگونه می‌توان تا زمانی که کامپوننت هنوز آماده نمایش نیست به جای آن دایره گردان ...Loading نمایش داد؟
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## بخش دوم: سوالات عملی
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. پروژه را از ریپوی https://github.com/nedaei79/react-interview کلون کنید.
+2. نیازمندی‌های پروژه را نصب کنید و آن را روی localhost بالا بیاورید.
+3. ساختار پروژه را از بالا به پایین یک بار توضیح دهید و بگویید مسئول هر یک از مولفه‌هایی که در صفحه می‌بینیم کدام قسمت از کد است؟
+4. در صفحه contact us در قسمت سمت چپ (آبی رنگ) روی دکمه clicked # times تعداد دفعات کلیک روی این دکمه را بنویسید.
+5. کاری کنید که هر وقت به صفحه contact us می‌آییم به ما خوش‌آمد گفته شود.
+6. فرض کنید در صفحه contact us یک فرم دو مرحله‌ای داریم: ابتدا فرم سمت چپ فعال و فرم سمت راست غیرفعال است. کاربر با فرم سمت چپ تعامل می‌کند و بعد با فشردن دکمه validate، اطلاعات وارد شده کاربر اعتبارسنچی می‌شود و در صورت معتبر بودن، فرم سمت چپ غیرفعال شده و فرم سمت راست فعال می‌شود. در اینجا برای پیاده‌سلزی این سناریو این موارد را در نظر بگیرید:
+   * تعامل کاربر با فرم چپ همان کلیک روی دکمه clicked # times است.
+   * بعد از فشردن validate در صورتی که روی دکمه سمت چپ بیش از 10 بار کلیک شده باشد، سمت چپ غیرفعال و راست فعال می‌شود. در غیر اینصورت هیچ اتفاقی نمی‌افتد.
+7. فرض کنید به هر دلیلی پردازش نیمه دوم فرم (سمت راست) زیاد طول می‌کشد و هر بار که این قسمت Rerender شود، کاربر برای مدت زیادی ...Loading می‌بیند که مطلوب نیست. برای شبیه‌سازی این وضعیت یک alert در ابتدای Right.js اضافه کنید که هر بار این کامپوننت Rerender می‌شود، پیامی را نمایش دهد. حالا کاری کنید که وقتی کاربر در حال فعالیت در قسمت چپ است، قسمت راست که قرار است غیرفعال بماند، Rerender نشود.
